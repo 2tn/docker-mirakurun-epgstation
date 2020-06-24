@@ -17,6 +17,12 @@
             "cmd": "%NODE% %ROOT%/config/enc.js",
             "suffix": ".mp4",
             "default": true
+        },
+        {
+            "name": "H264(720p)",
+            "cmd": "%NODE% %ROOT%/config/enc_720.js",
+            "suffix": ".mp4",
+            "default": false
         }
     ],
     "delts": false,
