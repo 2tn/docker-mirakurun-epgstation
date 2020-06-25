@@ -50,7 +50,7 @@ services:
             - ./epgstation/data:/app/data
             - ./epgstation/thumbnail:/app/thumbnail
             - ./epgstation/logs:/app/logs
-            - ./recorded:/app/recorded
+            - /mnt/md0:/app/recorded
         environment:
             TZ: "Asia/Tokyo"
         links:
