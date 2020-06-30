@@ -1,0 +1,3 @@
+[submodule "epgstation/config/JKCommentGetter"]
+	path = epgstation/config/JKCommentGetter
+	url = https://github.com/ACUVE/JKCommentGetter.git
