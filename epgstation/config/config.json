@@ -29,6 +29,7 @@
             "default": false
         }
     ],
+	"recordedEndCommand": "/usr/local/bin/node /app/config/jkAssConvert.js start",
 	"delts": true,
     "recordedViewer": {
         "ios": "infuse://x-callback-url/play?url=http://ADDRESS",
