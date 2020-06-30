@@ -1,34 +1,29 @@
-- name: adapter0
+- name: PX4-S0
   types:
     - BS
     - CS
-  dvbDevicePath: /dev/dvb/adapter0/dvr0
+  command: /opt/bin/recpt1 --device /dev/px4video0 --lnb 15 --b25 --strip <channel> - -
   decoder: arib-b25-stream-test
-  command: >-
-    dvbv5-zap -a 0 -c ./config/dvbconf-for-isdb/conf/dvbv5_channels_isdbs.conf
-    -r -P <channel>
-- name: adapter1
-  types:
-    - GR
-  dvbDevicePath: /dev/dvb/adapter1/dvr0
-  decoder: arib-b25-stream-test
-  command: >-
-    dvbv5-zap -a 1 -c ./config/dvbconf-for-isdb/conf/dvbv5_channels_isdbt.conf
-    -r -P <channel>
-- name: adapter2
+  isDisabled: false
+
+- name: PX4-S1
   types:
     - BS
     - CS
-  dvbDevicePath: /dev/dvb/adapter2/dvr0
+  command: /opt/bin/recpt1 --device /dev/px4video1 --lnb 15 --b25 --strip <channel> - -
   decoder: arib-b25-stream-test
-  command: >-
-    dvbv5-zap -a 2 -c ./config/dvbconf-for-isdb/conf/dvbv5_channels_isdbs.conf
-    -r -P <channel>
-- name: adapter3
+  isDisabled: false
+
+- name: PX4-T0
   types:
     - GR
-  dvbDevicePath: /dev/dvb/adapter3/dvr0
+  command: /opt/bin/recpt1 --device /dev/px4video2 --b25 --strip <channel> - -
   decoder: arib-b25-stream-test
-  command: >-
-    dvbv5-zap -a 3 -c ./config/dvbconf-for-isdb/conf/dvbv5_channels_isdbt.conf
-    -r -P <channel>
+  isDisabled: false
+
+- name: PX4-T1
+  types:
+    - GR
+  command: /opt/bin/recpt1 --device /dev/px4video3 --b25 --strip <channel> - -
+  decoder: arib-b25-stream-test
+  isDisabled: false
