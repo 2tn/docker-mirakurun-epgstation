@@ -9,6 +9,10 @@
         "connectTimeout": 1000,
         "connectionLimit": 10
     },
+    "basicAuth" : {
+        "user":"user",
+        "password" : "password"
+    },
     "excludeServices": [],
     "maxEncode": 2,
     "encode": [
