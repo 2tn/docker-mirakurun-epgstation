@@ -17,8 +17,15 @@
             "cmd": "%NODE% %ROOT%/config/enc.js",
             "suffix": ".mp4",
             "default": true
+        },
+        {
+            "name": "H264(720p)",
+            "cmd": "%NODE% %ROOT%/config/enc_720.js",
+            "suffix": ".mp4",
+            "default": false
         }
     ],
+	"delts": true,
     "recordedViewer": {
         "ios": "infuse://x-callback-url/play?url=http://ADDRESS",
         "android": "intent://ADDRESS#Intent;package=org.videolan.vlc;type=video;scheme=https;end"

@@ -31,7 +31,11 @@ Array.prototype.push.apply(args,['-movflags', 'faststart']);
 Array.prototype.push.apply(args, ['-map', '0', '-ignore_unknown', '-max_muxing_queue_size', maxMuxingQueueSize, '-sn']);
 
 // video filter 設定
-Array.prototype.push.apply(args, ['-vf', 'yadif']);
+let videoFilter = 'yadif';
+if (videoHeight > 720) {
+    videoFilter += ',scale=-2:720'
+}
+Array.prototype.push.apply(args, ['-vf', videoFilter]);
 
 // その他設定
 Array.prototype.push.apply(args,[
