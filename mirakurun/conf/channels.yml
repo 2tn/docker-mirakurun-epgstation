@@ -2,6 +2,10 @@
   type: GR
   channel: '16'
 
+- name: TVK
+  type: GR
+  channel: '18'
+
 - name: CX
   type: GR
   channel: '21'
@@ -29,6 +33,10 @@
 - name: NHK G
   type: GR
   channel: '27'
+
+- name: CTV
+  type: GR
+  channel: '30'
 
 - name: NHK BS1
   type: BS
@@ -212,51 +220,204 @@
   serviceId: 256
   isDisabled: false
 
-- name: CS2
-  type: CS
-  channel: CS2
-
-- name: CS4
-  type: CS
-  channel: CS4
-
-- name: CS6
-  type: CS
-  channel: CS6
-
-- name: CS8
+ 
+- name: 東映チャンネル
   type: CS
   channel: CS8
-
-- name: CS10
+  serviceId: 218
+- name: 衛星劇場
   type: CS
   channel: CS10
-
-- name: CS12
-  type: CS
-  channel: CS12
-
-- name: CS14
-  type: CS
-  channel: CS14
-
-- name: CS16
-  type: CS
-  channel: CS16
-
-- name: CS18
-  type: CS
-  channel: CS18
-
-- name: CS20
-  type: CS
-  channel: CS20
-
-- name: CS22
-  type: CS
-  channel: CS22
-
-- name: CS24
+  serviceId: 219
+- name: 映画ch・NECO
   type: CS
   channel: CS24
-
+  serviceId: 223
+- name: ザ・シネマ
+  type: CS
+  channel: CS14
+  serviceId: 227
+- name: ムービープラス
+  type: CS
+  channel: CS18
+  serviceId: 240
+- name: スカイA
+  type: CS
+  channel: CS4
+  serviceId: 250
+- name: GAORA
+  type: CS
+  channel: CS12
+  serviceId: 254
+- name: 日テレG+
+  type: CS
+  channel: CS24
+  serviceId: 257
+- name: ゴルフネットワーク
+  type: CS
+  channel: CS18
+  serviceId: 262
+- name: SKY STAGE
+  type: CS
+  channel: CS16
+  serviceId: 290
+- name: 時代劇専門ch
+  type: CS
+  channel: CS4
+  serviceId: 292
+- name: ファミリー劇場
+  type: CS
+  channel: CS14
+  serviceId: 293
+- name: ホームドラマch
+  type: CS
+  channel: CS6
+  serviceId: 294
+- name: MONDO TV
+  type: CS
+  channel: CS24
+  serviceId: 295
+- name: TBSチャンネル1
+  type: CS
+  channel: CS2
+  serviceId: 296
+- name: TBSチャンネル2
+  type: CS
+  channel: CS22
+  serviceId: 297
+- name: テレ朝チャンネル1
+  type: CS
+  channel: CS2
+  serviceId: 298
+- name: テレ朝チャンネル2
+  type: CS
+  channel: CS2
+  serviceId: 299
+- name: 日テレプラス
+  type: CS
+  channel: CS24
+  serviceId: 300
+- name: エンタメ～テレ
+  type: CS
+  channel: CS4
+  serviceId: 301
+- name: チャンネル銀河
+  type: CS
+  channel: CS18
+  serviceId: 305
+- name: フジテレビONE
+  type: CS
+  channel: CS20
+  serviceId: 307
+- name: フジテレビTWO
+  type: CS
+  channel: CS20
+  serviceId: 308
+- name: フジテレビNEXT
+  type: CS
+  channel: CS20
+  serviceId: 309
+- name: スーパー！ドラマTV
+  type: CS
+  channel: CS14
+  serviceId: 310
+- name: AXN海外ドラマ
+  type: CS
+  channel: CS16
+  serviceId: 311
+- name: FOX
+  type: CS
+  channel: CS22
+  serviceId: 312
+- name: 女性ch／LaLa
+  type: CS
+  channel: CS18
+  serviceId: 314
+- name: AXNミステリー
+  type: CS
+  channel: CS16
+  serviceId: 316
+- name: スペシャプラス
+  type: CS
+  channel: CS16
+  serviceId: 321
+- name: スペースシャワーTV
+  type: CS
+  channel: CS20
+  serviceId: 322
+- name: MTV
+  type: CS
+  channel: CS4
+  serviceId: 323
+- name: ミュージック・エア
+  type: CS
+  channel: CS6
+  serviceId: 324
+- name: エムオン！
+  type: CS
+  channel: CS12
+  serviceId: 325
+- name: 歌謡ポップスch
+  type: CS
+  channel: CS6
+  serviceId: 329
+- name: キッズステーション
+  type: CS
+  channel: CS12
+  serviceId: 330
+- name: カートゥーン
+  type: CS
+  channel: CS6
+  serviceId: 331
+- name: AT-X
+  type: CS
+  channel: CS16
+  serviceId: 333
+- name: ディズニージュニア
+  type: CS
+  channel: CS2
+  serviceId: 339
+- name: ディスカバリーチャンネル
+  type: CS
+  channel: CS6
+  serviceId: 340
+- name: アニマルプラネット
+  type: CS
+  channel: CS6
+  serviceId: 341
+- name: ヒストリーチャンネル
+  type: CS
+  channel: CS14
+  serviceId: 342
+- name: ナショナルジオグラフィック
+  type: CS
+  channel: CS12
+  serviceId: 343
+- name: 日テレNEWS24
+  type: CS
+  channel: CS8
+  serviceId: 349
+- name: TBS NEWS
+  type: CS
+  channel: CS22
+  serviceId: 351
+- name: BBCワールドニュース
+  type: CS
+  channel: CS16
+  serviceId: 353
+- name: CNNj
+  type: CS
+  channel: CS6
+  serviceId: 354
+- name: 囲碁・将棋チャンネル
+  type: CS
+  channel: CS6
+  serviceId: 363
+- name: スポーツライブ+
+  type: CS
+  channel: CS10
+  serviceId: 800
+- name: スカチャン1
+  type: CS
+  channel: CS10
+  serviceId: 801

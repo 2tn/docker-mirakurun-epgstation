@@ -10,6 +10,12 @@ RUN apt-get update && \
     apt-get -y install libx265-dev libnuma-dev && \
     apt-get -y install libasound2 libass9 libvdpau1 libva-x11-2 libva-drm2 libxcb-shm0 libxcb-xfixes0 libxcb-shape0 libvorbisenc2 libtheora0 && \
 \
+#niconico comment
+\
+    apt-get -y install python3 python3-pip ruby && \
+    npm install python-shell eastasianwidth && \
+    pip3 install bitstring && \
+\
 #ffmpeg build
 \
     mkdir /tmp/ffmpeg_sources && \
