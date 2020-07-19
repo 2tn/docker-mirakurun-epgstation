@@ -12,6 +12,7 @@ const password = '';
 const endat = Math.min(Number(process.env.ENDAT), Math.floor(new Date().getTime())) / 1000;
 const chname = process.env.CHANNELNAME;
 const recpath = process.env.RECPATH;
+const keisu = process.env.CHANNELTYPE == 'BS' ? 1 : 0.75;
 // const recpath = '/app/recorded/test.ts';
 const dirname = path.dirname(recpath);
 const basename = path.basename(recpath, path.extname(recpath));
@@ -107,7 +108,7 @@ function getCommentAndAss(cookie, channel, start_time, end_time) {
 }
 
 function buildAssFromChats(chats) {
-    const assHeader = '[Script Info]\nScriptType: v4.00+\nCollisions: Normal\nScaledBorderAndShadow: Yes\nPlayResX: 1920\nPlayResY: 1080\nTimer: 100.0000\nWrapStyle: 0\n\n' +
+    const assHeader = `[Script Info]\nScriptType: v4.00+\nCollisions: Normal\nScaledBorderAndShadow: Yes\nPlayResX: ${1920 * keisu}\nPlayResY: 1080\nTimer: 100.0000\nWrapStyle: 0\n\n` +
         '[V4+ Styles]\nFormat: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding' +
         '\nStyle: white,MS PGothic,28,&H00ffffff,&H00ffffff,&H00000000,&H00000000,-1,0,0,0,200,200,0,0.00,1,0,4,7,20,20,40,1\n\n' +
         '[Events]\nFormat: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text\n';
@@ -115,7 +116,7 @@ function buildAssFromChats(chats) {
     chats.forEach(chat => {
         const height = getColumn() * 56;
         assText += `Dialogue: 0,${parseTime(chat.time)},${parseTime(chat.time + 8)},white,,0000,0000,0000,,` +
-            `{\\move(1920,${height},-${eaw.length(chat.text) * 56},${height})}${chat.text}\n`
+            `{\\move(${1920 * keisu},${height},-${eaw.length(chat.text) * 56},${height})}${chat.text}\n`
     })
     return assText;
 }
